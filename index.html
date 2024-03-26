@@ -74,7 +74,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 
 	<a href="#one" class="w3-btn w3-grey w3-round"> Draws Rectangle </a> <!--creating a button that once clicked, will create a rectangle with pre-established dimensions onto the canvas-->
-	
+	function draw_a() {
+ 		var a_canvas = document.getElementById("a");
+  		var b_context = b_canvas.getContext("2d");
+  		b_context.fillRect(50, 25, 150, 100);
+}
 	<a href="#two" class="w3-btn w3-grey w3-round"> Draw out your name </a> <!--button used that once clicked upon, it will draw out the person's name onto the Canvas-->
 		
 	<a href="#three" class="w3-btn w3-grey w3-round"> Here is an image </a> <!--when button is clicked, an image will be uploaded and displayed onto the Canvas-->
