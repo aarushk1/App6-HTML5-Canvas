@@ -53,19 +53,19 @@ function draw_name() { //function will be called back for to be able to draw out
 }
 
 
-function depict() {
+function depict() { //function is going to be used to create an image that will be placed in the Canvas
 	var img = new Image(); //establishes that there is a new image
-	img.src='https://apps.jsg.utexas.edu/profiles/files/photos/timothy_riedel__thumb.jpg'
-	img.addEventListener('load', function() {
-	const depictCanvas = document.getElementById("myCanvas");
-	const depictCtx = depictCanvas.getContext("2d");
-	depictCtx.drawImage(img,0,0); }, false);
+	img.src='https://apps.jsg.utexas.edu/profiles/files/photos/timothy_riedel__thumb.jpg' //this line is used to create the image and what image will be shown in the canvas
+	img.addEventListener('load', function() { //this line will be used to attach event handler with event
+	const depictCanvas = document.getElementById("myCanvas"); //this line is used to link the const to the ID of the canvas
+	const depictCtx = depictCanvas.getContext("2d"); //creates the context of referral for the canvas
+	depictCtx.drawImage(img,0,0); }, false); //draws the image and creates a checker with the false
 	
 
 }
 
-function clear() {
-	var depictCanvas = document.getElementById("myCanvas");
+function clear() { //this function will be used to clear the different things that are drawn into the canvas
+	var depictCanvas = document.getElementById("myCanvas"); 
 	var depictCtx = depictCanvas.getContext("2d");
 	depictCanvas.width = depictCanvas.width;
 
