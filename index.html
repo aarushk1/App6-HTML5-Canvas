@@ -43,14 +43,16 @@ function draw_rect() {
  	var a_canvas = document.getElementById("myCanvas"); //this variable is used to generate an ID for the canvas to be called
   	var a_context = a_canvas.getContext("2d"); //this variable is used for calling the context of the 2D canvas
   	a_context.fillRect(50, 25, 150, 100); //gives the dimensions and location, specifically the x, y, width, height
-}	
-function name() {
-	context.font = "bold 12px sans-serif";
-	context.fillText("x", 248, 43);
-	context.fillText("y", 58, 165);
 }
-</script>
 
+function draw_name() {
+	const nameCanvas = document.getElementById("myCanvas");
+	const nameCtx = canvas.getContext("2d");
+	ctx.font = "30px Arial";
+	ctx.fillText("Hello World", 10, 50);
+}
+	
+</script>
 
 
 <style>	
@@ -86,11 +88,11 @@ function name() {
 
 	<a href="#one" onclick="draw_rect();" class="w3-btn w3-grey w3-round"> Draws Rectangle </a> <!--creating a button that once clicked, will create a rectangle with pre-established dimensions onto the canvas-->
 		
-	<a href="#two" onclick="name();" class="w3-btn w3-grey w3-round"> Draw out your name </a> <!--button used that once clicked upon, it will draw out the person's name onto the Canvas-->
+	<a href="#one" onclick="draw_name();" class="w3-btn w3-grey w3-round"> Draw out your name </a> <!--button used that once clicked upon, it will draw out the person's name onto the Canvas-->
 		
-	<a href="#three" class="w3-btn w3-grey w3-round"> Here is an image </a> <!--when button is clicked, an image will be uploaded and displayed onto the Canvas-->
+	<a href="#one" class="w3-btn w3-grey w3-round"> Here is an image </a> <!--when button is clicked, an image will be uploaded and displayed onto the Canvas-->
 		
-	<a href="#four" class="w3-btn w3-grey w3-round"> Clear </a> <!--once button is clicked, it will completely clear the canvas screen so that nothing can be seen-->
+	<a href="#one" class="w3-btn w3-grey w3-round"> Clear </a> <!--once button is clicked, it will completely clear the canvas screen so that nothing can be seen-->
 
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
