@@ -38,6 +38,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+
+function draw_rect() { //when called upon, will draw a rectangle upon request 
+ 	var a_canvas = document.getElementById("a"); //this variable is used to generate an ID for the canvas to be called
+  	var b_context = b_canvas.getContext("2d"); //this variable is used for calling the context of the 2D canvas
+  	b_context.fillRect(50, 25, 150, 100); //gives the dimensions and location, specifically the x, y, width, height
+}	
 </script>
 
 
@@ -73,12 +79,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<p><canvas id="myCanvas" width="300" height="225" style="border:6px solid #993448;"></p> 
 	
 
-	<a href="#one" class="w3-btn w3-grey w3-round"> Draws Rectangle </a> <!--creating a button that once clicked, will create a rectangle with pre-established dimensions onto the canvas-->
-	function draw_a() {
- 		var a_canvas = document.getElementById("a");
-  		var b_context = b_canvas.getContext("2d");
-  		b_context.fillRect(50, 25, 150, 100);
-}
+	<a href="#one" onclick="draw_rect();" class="w3-btn w3-grey w3-round"> Draws Rectangle </a> <!--creating a button that once clicked, will create a rectangle with pre-established dimensions onto the canvas-->
+		
 	<a href="#two" class="w3-btn w3-grey w3-round"> Draw out your name </a> <!--button used that once clicked upon, it will draw out the person's name onto the Canvas-->
 		
 	<a href="#three" class="w3-btn w3-grey w3-round"> Here is an image </a> <!--when button is clicked, an image will be uploaded and displayed onto the Canvas-->
