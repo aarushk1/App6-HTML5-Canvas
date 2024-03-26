@@ -45,23 +45,24 @@ function draw_rect() {
   	a_context.fillRect(50, 25, 150, 100); //gives the dimensions and location, specifically the x, y, width, height
 }
 
-function draw_name() {
-	const nameCanvas = document.getElementById("myCanvas");
+function draw_name() { //function will be called back for to be able to draw out a name to be produced in the canvas
+	const nameCanvas = document.getElementById("myCanvas"); //used to identify the canvas that will be drawn on
 	const nameCtx = nameCanvas.getContext("2d");
 	nameCtx.font = "30px Arial";
-	nameCtx.strokeText("Hello World", 10, 50);
+	nameCtx.strokeText("Aarush", 10, 50);
 }
 
 
-/*function depict() {
-	<img id="image" src="VFGC.jpg" alt="tools width="75" height="100">
+function depict() {
+	image img = new Image();
+	<img src="VFGC.jpeg">
 	const depictCanvas = document.getElementById("myCanvas");
 	const depictCtx = depictCanvas.getContext("2d");
-	const img = document.getElementById("image");
+	const img = document.getElementById("img");
 	depictCtx.drawImage(img,10,10);
 
 }
-*/
+
 </script>
 
 
