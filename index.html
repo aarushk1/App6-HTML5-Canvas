@@ -51,7 +51,12 @@ function draw_name() {
 	nameCtx.font = "30px Arial";
 	nameCtx.strokeText("Hello World", 10, 50);
 }
-	
+
+function depict() {
+	const depictCanvas = document.getElementByID("myCanvas");
+	const depictCtx = depictCanvas.getContext("2d");
+	<img src="VFGC.jpeg" alt="picture"> 
+}
 </script>
 
 
@@ -90,7 +95,7 @@ function draw_name() {
 		
 	<a onclick="draw_name();" class="w3-btn w3-grey w3-round"> Draw out your name </a> <!--button used that once clicked upon, it will draw out the person's name onto the Canvas-->
 		
-	<a class="w3-btn w3-grey w3-round"> Here is an image </a> <!--when button is clicked, an image will be uploaded and displayed onto the Canvas-->
+	<a onclick="depict();" class="w3-btn w3-grey w3-round"> Here is an image </a> <!--when button is clicked, an image will be uploaded and displayed onto the Canvas-->
 		
 	<a class="w3-btn w3-grey w3-round"> Clear </a> <!--once button is clicked, it will completely clear the canvas screen so that nothing can be seen-->
 
