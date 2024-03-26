@@ -56,10 +56,12 @@ function draw_name() { //function will be called back for to be able to draw out
 function depict() {
 	image img = new Image();
 	<img src="VFGC.jpeg">
+	img.addEventListener('load', function() {
 	const depictCanvas = document.getElementById("myCanvas");
 	const depictCtx = depictCanvas.getContext("2d");
 	const img = document.getElementById("img");
-	depictCtx.drawImage(img,10,10);
+	depictCtx.drawImage(img,0,0); false);
+	}
 
 }
 
