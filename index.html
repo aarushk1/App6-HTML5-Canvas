@@ -46,8 +46,8 @@ function draw_rect() {
 }
 
 function draw_name() { //function will be called back for to be able to draw out a name to be produced in the canvas
-	const nameCanvas = document.getElementById("myCanvas"); //used to identify the canvas that will be drawn on
-	const nameCtx = nameCanvas.getContext("2d"); //used to get the context of the Canvas so that it can be called back
+	var nameCanvas = document.getElementById("myCanvas"); //used to identify the canvas that will be drawn on
+	var nameCtx = nameCanvas.getContext("2d"); //used to get the context of the Canvas so that it can be called back
 	nameCtx.font = "30px Arial"; //establishes the font size of the text
 	nameCtx.strokeText("Aarush", 10, 50); //establishes what is written and the coordinates where
 }
@@ -57,16 +57,15 @@ function depict() { //function is going to be used to create an image that will 
 	var img = new Image(); //establishes that there is a new image
 	img.src='https://apps.jsg.utexas.edu/profiles/files/photos/timothy_riedel__thumb.jpg' //this line is used to create the image and what image will be shown in the canvas
 	img.addEventListener('load', function() { //this line will be used to attach event handler with event
-	const depictCanvas = document.getElementById("myCanvas"); //this line is used to link the const to the ID of the canvas
-	const depictCtx = depictCanvas.getContext("2d"); //creates the context of referral for the canvas
+	var depictCanvas = document.getElementById("myCanvas"); //this line is used to link the var to the ID of the canvas
+	var depictCtx = depictCanvas.getContext("2d"); //creates the context of referral for the canvas
 	depictCtx.drawImage(img,0,0); }, false); //draws the image and creates a checker with the false
 	
 
 }
 
 function clear() { //this function will be used to clear the different things that are drawn into the canvas
-	var depictCanvas = document.getElementById("myCanvas"); 
-	var depictCtx = depictCanvas.getContext("2d");
+	var depictCanvas = document.getElementById("myCanvas");
 	depictCanvas.width = depictCanvas.width;
 
 }
@@ -111,7 +110,7 @@ function clear() { //this function will be used to clear the different things th
 		
 	<a onclick="depict();" class="w3-btn w3-grey w3-round"> Here is an image </a> <!--when button is clicked, an image will be uploaded and displayed onto the Canvas-->
 		
-	<a onclick="clear();" class="w3-btn w3-grey w3-round"> Clear </a> <!--once button is clicked, it will completely clear the canvas screen so that nothing can be seen-->
+	<a onclick="clear()" class="w3-btn w3-grey w3-round"> Clear </a> <!--once button is clicked, it will completely clear the canvas screen so that nothing can be seen-->
 
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
