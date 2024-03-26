@@ -49,7 +49,7 @@ function draw_name() {
 	const nameCanvas = document.getElementById("myCanvas");
 	const nameCtx = canvas.getContext("2d");
 	nameCtx.font = "30px Arial";
-	nameCtx.fillText("Hello World", 10, 50);
+	nameCtx.strokeText("Hello World", 10, 50);
 }
 	
 </script>
@@ -88,7 +88,7 @@ function draw_name() {
 
 	<a href="#one" onclick="draw_rect();" class="w3-btn w3-grey w3-round"> Draws Rectangle </a> <!--creating a button that once clicked, will create a rectangle with pre-established dimensions onto the canvas-->
 		
-	<a href="#one" onclick="draw_name();" class="w3-btn w3-grey w3-round"> Draw out your name </a> <!--button used that once clicked upon, it will draw out the person's name onto the Canvas-->
+	<a href="#two" onclick="draw_name();" class="w3-btn w3-grey w3-round"> Draw out your name </a> <!--button used that once clicked upon, it will draw out the person's name onto the Canvas-->
 		
 	<a href="#one" class="w3-btn w3-grey w3-round"> Here is an image </a> <!--when button is clicked, an image will be uploaded and displayed onto the Canvas-->
 		
