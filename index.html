@@ -47,15 +47,15 @@ function draw_rect() {
 
 function draw_name() { //function will be called back for to be able to draw out a name to be produced in the canvas
 	const nameCanvas = document.getElementById("myCanvas"); //used to identify the canvas that will be drawn on
-	const nameCtx = nameCanvas.getContext("2d");
-	nameCtx.font = "30px Arial";
-	nameCtx.strokeText("Aarush", 10, 50);
+	const nameCtx = nameCanvas.getContext("2d"); //used to get the context of the Canvas so that it can be called back
+	nameCtx.font = "30px Arial"; //establishes the font size of the text
+	nameCtx.strokeText("Aarush", 10, 50); //establishes what is written and the coordinates where
 }
 
 
 function depict() {
 	image img = new Image();
-	<img src="VFGC.jpeg">
+	<img src="https://cdn-icons-png.flaticon.com/128/2991/2991148.png.jpeg">
 	img.addEventListener('load', function() {
 	const depictCanvas = document.getElementById("myCanvas");
 	const depictCtx = depictCanvas.getContext("2d");
